@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SwitchCollectionViewCell" customModule="Star_Browser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="646" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="646" height="104"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJl-hw-ytg">
+                        <rect key="frame" x="16" y="40" width="614" height="64"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FL-nE-XhE">
+                                <rect key="frame" x="0.0" y="0.0" width="307" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="settings" imagePlacement="trailing" imagePadding="12"/>
+                                <connections>
+                                    <action selector="switchButtonType:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ibc-sN-ETL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3H-pE-GtS">
+                                <rect key="frame" x="307" y="0.0" width="307" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="greenSpeed" imagePlacement="trailing" imagePadding="12"/>
+                                <connections>
+                                    <action selector="switchButtonType:" destination="gTV-IL-0wX" eventType="touchUpInside" id="nNK-nh-g5h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5FL-nE-XhE" firstAttribute="width" secondItem="cJl-hw-ytg" secondAttribute="width" multiplier="0.5" id="BBL-PW-2ae"/>
+                            <constraint firstItem="o3H-pE-GtS" firstAttribute="width" secondItem="cJl-hw-ytg" secondAttribute="width" multiplier="0.5" id="NmK-YC-QtM"/>
+                            <constraint firstAttribute="trailing" secondItem="o3H-pE-GtS" secondAttribute="trailing" id="QgL-6x-lya"/>
+                            <constraint firstAttribute="bottom" secondItem="5FL-nE-XhE" secondAttribute="bottom" id="QnP-s7-mie"/>
+                            <constraint firstAttribute="bottom" secondItem="o3H-pE-GtS" secondAttribute="bottom" id="T5A-fL-vaB"/>
+                            <constraint firstItem="o3H-pE-GtS" firstAttribute="top" secondItem="cJl-hw-ytg" secondAttribute="top" id="Umf-zq-37Z"/>
+                            <constraint firstItem="5FL-nE-XhE" firstAttribute="top" secondItem="cJl-hw-ytg" secondAttribute="top" id="XZV-Kn-lr0"/>
+                            <constraint firstItem="5FL-nE-XhE" firstAttribute="leading" secondItem="cJl-hw-ytg" secondAttribute="leading" id="ets-M4-xpC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cJl-hw-ytg" secondAttribute="bottom" id="AUu-5F-7t9"/>
+                <constraint firstItem="cJl-hw-ytg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="FWA-XP-qxa"/>
+                <constraint firstItem="cJl-hw-ytg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="GjP-Li-QOG"/>
+                <constraint firstAttribute="trailing" secondItem="cJl-hw-ytg" secondAttribute="trailing" constant="16" id="vd3-Jr-ROq"/>
+            </constraints>
+            <size key="customSize" width="646" height="104"/>
+            <connections>
+                <outlet property="settingButton" destination="5FL-nE-XhE" id="xtG-xT-VLe"/>
+                <outlet property="speedButton" destination="o3H-pE-GtS" id="G3v-PD-kgP"/>
+                <outlet property="switchView" destination="cJl-hw-ytg" id="hvk-oQ-2kE"/>
+            </connections>
+            <point key="canvasLocation" x="430.43478260869568" y="107.14285714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="greenSpeed" width="25" height="26"/>
+        <image name="settings" width="17" height="18"/>
+    </resources>
+</document>

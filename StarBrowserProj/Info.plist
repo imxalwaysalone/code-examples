@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OnestMedium</string>
+		<string>OnestBold.ttf</string>
+		<string>OnestRegular.ttf</string>
+		<string>OnestThin.ttf</string>
+		<string>OnestBlack.ttf</string>
+		<string>OnestMedium.ttf</string>
+		<string>OnestBold.ttf</string>
+		<string>OnestLight.ttf</string>
+		<string>OnestExtraBold.ttf</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

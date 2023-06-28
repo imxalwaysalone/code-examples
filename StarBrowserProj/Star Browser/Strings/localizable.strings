@@ -1,0 +1,60 @@
+// MARK: - MainViewController
+"MainViewController.titleName" = "Using the Phone and Text Features";
+"MainMainViewController.tabLinkName" = "WikiHow";
+"MainMainViewController.tabDescriptionName" = "How to Use a Smartphone. ... If you need to install a SIM card, use the SIM card tool that came with your phone and insert it into the compartment with a tiny pinhole in it.";
+"MainMainViewController.search" = "Search";
+// MARK: - PremiumViewController
+"PremiumViewController.oppLabel" = "Get Premium";
+"PremiumViewController.rateTerm.weak" = "One weak";
+"PremiumViewController.reteTerm.month" = "One month";
+"PremiumViewController.reteTerm.year" = "One year";
+"PremiumViewController.retePrice.weak" = "0,99";
+"PremiumViewController.retePrice.month" = "3,99";
+"PremiumViewController.retePrice.year" = "6,99";
+// MARK: - OnboardingViewController
+"OnboardingViewController.policy" = "Terms of Use & Privacy Policy";
+"OnboardingViewController.firstLabel1" = "Light";
+"OnboardingViewController.firstLabel2" = "Easy to use.";
+"OnboardingViewController.firstLabel3" = "and";
+"OnboardingViewController.firstLabel4" = "Without long loading\nof content.";
+"OnboardingViewController.firstLabel5" = "fast";
+"OnboardingViewController.secondLabel1" = "Reliable";
+"OnboardingViewController.secondLabel2" = "Blocking ads, scripts and cookies according to your settings.";
+"OnboardingViewController.secondLabel3" = "protection";
+"OnboardingViewController.thirdLabel1" = "Keeping";
+"OnboardingViewController.thirdLabel2" = "The browser does not remember\nyour actions and history,only\nprivate tabs.";
+"OnboardingViewController.thirdLabel3" = "secrets";
+"OnboardingViewController.nextButton.title" = "NEXT";
+"OnboardingViewController.startButton.title" = "START";
+// MARK: - SettinggsViewController
+"SettinggsViewController.oppCellData" =  "Opportunities";
+"SettinggsViewController.premiumCellData" = "Do you want more?";
+"SettinggsViewController.searchCellData" = "SEARCH ENGINE";
+"SettinggsViewController.selectedCellData.google" = "Google";
+"SettinggsViewController.selecredCellData.bing" = "Bing";
+"SettinggsViewController.selectedCellData.duck" = "DuckDuckGo";
+"SettinggsViewController.controlCellData.adBlock" = "Ad blocking";
+"SettinggsViewController.controlCellData.scripts" = "Blocking scripts";
+"SettinggsViewController.controlCellData.cookies" = "Blocking cookies";
+"SettinggsViewController.speedometrData" = "DOWNLOAD";
+"SettinggsViewController.countCellData" = "DOWNLOAD";
+"SettinggsViewController.infoCellData.connection" = "CONNECTION TYPE";
+"SettinggsViewController.infoCellData.info" = "--";
+"SettinggsViewController.infoCellData.ip" = "CURRENT IP";
+"SettinggsViewController.infoCellData.provider" = "PROVIDER";
+"SettinggsViewController.infoCellData.location" = "LOCATION";
+"SettinggsViewController.infoCellData.ping" = "PING";
+// MARK: - PremiumCollectionViewCell
+"PremiumCollectionViewCell.config.premium.first" = "Your premium is activated";
+"PremiumCollectionViewCell.config.premium.second" = "Do you want more?";
+"PremiumCollectionViewCell.premiumButton.getPremium" = "Get Premium";
+// MARK: - StartCollectionViewCell
+"StartCollectionViewCell.startTest" = "START TEST";
+"StartCollectionViewCell.processingTest" = "TEST IN PROGRESS";
+// MARK: - PopUpView
+"PopUpView.searchCellData.favourites" = "Add to favorites";
+"PopUpView.searchCellData.saved" = "Add to saved tabs";
+"PopUpView.searchCellData.pdf" = "Save PDF";
+"PopUpView.searchCellData.share" = "Share";
+"PopUpView.searchCellData.delete" = "Delete";
+"PopUpView.searchCellData.removeFromFav" = "Remove from favorites";

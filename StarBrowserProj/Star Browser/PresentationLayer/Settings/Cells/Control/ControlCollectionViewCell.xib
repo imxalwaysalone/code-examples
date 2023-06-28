@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ControlCollectionViewCell" customModule="StarBrowserProj" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="78"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="78"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlO-DI-uwd">
+                        <rect key="frame" x="24" y="0.0" width="328" height="78"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sj-8B-zvf">
+                                <rect key="frame" x="0.0" y="28.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r8D-56-GI6">
+                                <rect key="frame" x="279" y="23.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchControlAction:" destination="gTV-IL-0wX" eventType="valueChanged" id="rId-np-rTk"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cK8-QJ-WWy">
+                                <rect key="frame" x="0.0" y="77" width="328" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cK8-QJ-WWy" secondAttribute="height" multiplier="328:1" id="nde-t2-CLg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Sj-8B-zvf" firstAttribute="leading" secondItem="JlO-DI-uwd" secondAttribute="leading" id="0l7-Cp-N3e"/>
+                            <constraint firstItem="r8D-56-GI6" firstAttribute="centerY" secondItem="JlO-DI-uwd" secondAttribute="centerY" id="CJA-7r-5VM"/>
+                            <constraint firstItem="cK8-QJ-WWy" firstAttribute="leading" secondItem="JlO-DI-uwd" secondAttribute="leading" id="Y32-1s-Aco"/>
+                            <constraint firstItem="r8D-56-GI6" firstAttribute="centerY" secondItem="2Sj-8B-zvf" secondAttribute="centerY" id="Ymn-tH-Jx7"/>
+                            <constraint firstAttribute="trailing" secondItem="cK8-QJ-WWy" secondAttribute="trailing" id="kou-TX-GSm"/>
+                            <constraint firstAttribute="bottom" secondItem="cK8-QJ-WWy" secondAttribute="bottom" id="l26-7y-BcY"/>
+                            <constraint firstAttribute="trailing" secondItem="r8D-56-GI6" secondAttribute="trailing" id="t5r-sp-9SQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="JlO-DI-uwd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1L4-8v-JUX"/>
+                <constraint firstAttribute="trailing" secondItem="JlO-DI-uwd" secondAttribute="trailing" constant="24" id="EvQ-4F-Nqc"/>
+                <constraint firstAttribute="bottom" secondItem="JlO-DI-uwd" secondAttribute="bottom" id="bfn-N0-aQl"/>
+                <constraint firstItem="JlO-DI-uwd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="frf-wD-TPP"/>
+            </constraints>
+            <size key="customSize" width="376" height="78"/>
+            <connections>
+                <outlet property="conrolView" destination="JlO-DI-uwd" id="Abw-RJ-u7C"/>
+                <outlet property="controlLabel" destination="2Sj-8B-zvf" id="cye-UF-Dkn"/>
+                <outlet property="placeholder" destination="cK8-QJ-WWy" id="cgo-ul-Mnb"/>
+                <outlet property="switchControl" destination="r8D-56-GI6" id="IIC-qB-j1c"/>
+                <outlet property="topConstraintView" destination="1L4-8v-JUX" id="bt5-4F-UQr"/>
+            </connections>
+            <point key="canvasLocation" x="298.55072463768118" y="98.4375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

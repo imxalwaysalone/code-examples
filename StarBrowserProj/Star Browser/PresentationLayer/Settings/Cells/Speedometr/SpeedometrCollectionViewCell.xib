@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SpeedometrCollectionViewCell" id="gTV-IL-0wX" customClass="SpeedometrCollectionViewCell" customModule="Star_Browser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="263"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="263"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGP-xn-XFm">
+                        <rect key="frame" x="0.0" y="0.0" width="368" height="263"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLc-Cq-z1a">
+                                <rect key="frame" x="163" y="97" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkX-7A-pVU">
+                                <rect key="frame" x="163" y="121" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="CkX-7A-pVU" firstAttribute="centerY" secondItem="YGP-xn-XFm" secondAttribute="centerY" id="9RO-nq-jjS"/>
+                            <constraint firstItem="CkX-7A-pVU" firstAttribute="top" secondItem="KLc-Cq-z1a" secondAttribute="bottom" constant="3" id="c0g-2h-clK"/>
+                            <constraint firstItem="CkX-7A-pVU" firstAttribute="centerX" secondItem="YGP-xn-XFm" secondAttribute="centerX" id="ktc-Qy-wlt"/>
+                            <constraint firstItem="KLc-Cq-z1a" firstAttribute="centerX" secondItem="YGP-xn-XFm" secondAttribute="centerX" id="uyE-2e-QbW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="YGP-xn-XFm" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="8AG-UN-Qkh"/>
+                <constraint firstItem="YGP-xn-XFm" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="HjC-8i-JAv"/>
+                <constraint firstItem="YGP-xn-XFm" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Opw-I1-UVQ"/>
+                <constraint firstItem="YGP-xn-XFm" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="S3N-tj-avt"/>
+            </constraints>
+            <size key="customSize" width="368" height="263"/>
+            <connections>
+                <outlet property="mainView" destination="YGP-xn-XFm" id="XTq-II-wj6"/>
+                <outlet property="titleLabel" destination="KLc-Cq-z1a" id="4Bc-gU-s2u"/>
+                <outlet property="valueLabel" destination="CkX-7A-pVU" id="uA1-Bo-Pdq"/>
+                <outlet property="valueLabelYConstraint" destination="9RO-nq-jjS" id="tly-bu-Jz1"/>
+            </connections>
+            <point key="canvasLocation" x="370.9923664122137" y="62.323943661971832"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
